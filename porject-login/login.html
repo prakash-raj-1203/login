@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login form</title>
+  <link rel="stylesheet" href="design.css">
+
+</head>
+<body>
+<div class="login-box">
+  <h2>Register</h2>
+  <form method="get" action="link.php">
+    <div class="user-box">
+      <input type="text" name="names" id="name" required="">
+      <label>Name</label>
+    </div>
+    <div class="user-box">
+      <input type="email" name="e-mail" id="email" required="">
+      <label>e-mail id</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="passwords" id="password" required="">
+      <label>Password</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="numbers" id="mobile" required="">
+      <label>Mobile number</label>
+    </div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <input type="submit" onclick="validateform()" value="log in" class="user-btn"> 
+    </a>
+  </form>
+</div>  
+<script>
+  function validateform(){
+    let name=document.getElementById("name").value;
+    let email=document.getElementById("email").value;
+    let password=document.getElementById("password").value;
+    let mobile=document.getElementById("mobile").value;
+
+    if(name==""){
+      alert("Name can't be blank");  
+    }
+
+    if(email==""){
+      alert("e-mail can't be blank");  
+    }
+
+    if(password==""){
+      alert("password can't be blank");
+    }
+
+    if(mobile==""){
+      alert("mobile number can't be blank");
+    }
+  }
+</script>
+</body>
+</html>
